@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    >
+    <FrameLayout
+        android:id="@+id/imma"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/banner_03"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center|bottom"
+            android:background="#80000000">
+
+            <TextView
+                android:id="@+id/link"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="16dp"/>
+            <TextView
+                android:id="@+id/sin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Sign up"
+                android:textColor="#000000"
+
+                android:textSize="16dp"
+                android:padding="16dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+         <LinearLayout
+             android:layout_below="@+id/imma"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+             <!-- INPUT -->
+             <esprit.tn.customfonts.EditText_Poppins_Regular
+                 android:layout_marginTop="10dp"
+                 android:id="@+id/username_input"
+                 android:layout_width="300dp"
+                 android:layout_marginLeft="58dp"
+                 android:layout_height="wrap_content"
+                 android:paddingTop="20dp"
+                 android:layout_marginBottom="10dp"
+                 android:maxLines="1"
+                 android:background="@color/cardview_shadow_start_color"
+                 android:paddingBottom="20dp"
+                 android:paddingLeft="17dp"
+                 android:layout_toRightOf="@+id/username_icon"
+                 android:hint="nom"
+
+                 android:textCursorDrawable="@drawable/cursor_color"
+                 android:textSize="12sp"
+                 android:shadowColor="@color/cardview_shadow_end_color"
+                 />
+
+             <!-- INPUT -->
+             <esprit.tn.customfonts.EditText_Poppins_Regular
+                 android:id="@+id/prenom"
+                 android:layout_toRightOf="@+id/icon"
+                 android:hint="Prenom"
+                 android:textSize="12sp"
+                 android:paddingLeft="17dp"
+
+                 android:paddingBottom="20dp"
+                 android:maxLength="10"
+                 android:paddingTop="20dp"
+                 android:layout_marginBottom="10dp"
+                 android:maxLines="1"
+                 android:textCursorDrawable="@drawable/cursor_color"
+                 android:layout_width="300dp"
+                 android:layout_marginLeft="58dp"
+                 android:layout_height="wrap_content"
+                 android:background="@color/cardview_shadow_start_color"/>
+
+             <esprit.tn.customfonts.EditText_Poppins_Regular
+                 android:id="@+id/tel"
+                 android:layout_toRightOf="@+id/icon"
+                 android:hint="numero Tel"
+                 android:textSize="12sp"
+                 android:paddingLeft="17dp"
+                 android:background="@color/cardview_shadow_start_color"
+                 android:paddingTop="20dp"
+                 android:layout_marginBottom="10dp"
+                 android:maxLines="1"
+                 android:inputType="phone"
+                 android:paddingBottom="15dp"
+                 android:maxLength="10"
+                 android:textCursorDrawable="@drawable/cursor_color"
+                 android:layout_width="300dp"
+                 android:layout_marginLeft="58dp"
+                 android:layout_height="wrap_content"/>
+
+             <esprit.tn.customfonts.EditText_Poppins_Regular
+                 android:id="@+id/email"
+                 android:layout_toRightOf="@+id/icon"
+                 android:hint="email: x@y.com"
+                 android:inputType="textEmailAddress"
+                 android:textSize="12sp"
+                 android:paddingLeft="17dp"
+                 android:background="@color/cardview_shadow_start_color"
+                 android:paddingBottom="15dp"
+                 android:paddingTop="20dp"
+                 android:layout_marginBottom="10dp"
+                 android:maxLines="1"
+                 android:textCursorDrawable="@drawable/cursor_color"
+                 android:layout_width="300dp"
+                 android:layout_marginLeft="58dp"
+                 android:layout_height="wrap_content"/>
+              <android.support.design.widget.TextInputLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  app:passwordToggleEnabled="true">
+                  <EditText
+                      android:id="@+id/password"
+                      android:layout_toRightOf="@+id/icon"
+                      android:hint="mot de passe"
+                      android:textSize="12sp"
+                      android:paddingLeft="17dp"
+
+
+                      android:background="@color/cardview_shadow_start_color"
+                      android:inputType="textPassword"
+                      android:paddingBottom="15dp"
+                      android:paddingTop="20dp"
+                      android:layout_marginBottom="10dp"
+                      android:maxLines="1"
+                      android:textCursorDrawable="@drawable/cursor_color"
+                      android:layout_width="300dp"
+                      android:layout_marginLeft="58dp"
+                      android:layout_height="wrap_content"/>
+
+              </android.support.design.widget.TextInputLayout>
+
+
+
+             <Spinner
+                 android:id="@+id/spinner"
+                 android:layout_width="300dp"
+                 android:layout_marginLeft="58dp"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:entries="@array/gouvernorat"
+                 android:paddingTop="20dp"
+                 android:layout_marginBottom="10dp"
+                 android:maxLines="1"
+                 android:background="@color/cardview_shadow_start_color"/>
+
+
+             <esprit.tn.customfonts.Button_Poppins_Regular
+                 android:id="@+id/register"
+                 android:layout_width="300dp"
+                 android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                 android:layout_gravity="bottom|center"
+                 android:layout_marginBottom="10dp"
+                 android:background="#87CEFA"
+                 android:gravity="center"
+                 android:paddingTop="14dp"
+                 android:paddingBottom="14dp"
+                 android:text="Enregistrer"
+                 android:textColor="#ffffff"
+                 android:textSize="12sp" />
+
+         </LinearLayout>
+
+
+
+<ProgressBar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/loading"
+    android:layout_marginTop="250dp"
+    android:visibility="gone"
+    />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailSearchF">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/nana"
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:layout_marginBottom="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner_03" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_below="@id/nana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <esprit.tn.customfonts.MyTextView
+                    android:id="@+id/usrusr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#0000"
+                    android:gravity="left"
+                    android:maxLength="12"
+                    android:padding="16dp"
+                    android:text="Demande :"
+                    android:textColor="#a2a1b8"
+                    android:textSize="16dp" />
+
+                <esprit.tn.customfonts.MyTextView
+                    android:id="@+id/itmSpecEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#0000"
+                    android:gravity="right"
+                    android:hint="Sam Enricjjlkkljjkljkljkljkjkljlkkjljkljkl"
+
+                    android:padding="16dp"
+                    android:textColor="#181737"
+                    android:textColorHint="#181737"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dad8d8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <esprit.tn.customfonts.MyTextView
+                    android:id="@+id/mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#0000"
+                    android:gravity="left"
+                    android:maxLength="12"
+                    android:padding="16dp"
+                    android:text="Region :"
+                    android:textColor="#a2a1b8"
+                    android:textSize="16dp" />
+
+                <esprit.tn.customfonts.MyTextView
+                    android:id="@+id/itmRegEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#0000"
+                    android:gravity="right"
+                    android:hint="sam@assasasasasasasaassasasasasasasasa.com"
+
+                    android:padding="16dp"
+                    android:textColor="#181737"
+                    android:textColorHint="#1b193b"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dad8d8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <esprit.tn.customfonts.MyTextView
+                    android:id="@+id/pswrd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#0000"
+                    android:gravity="left"
+                    android:maxLength="12"
+                    android:padding="16dp"
+                    android:text="Details :"
+                    android:textColor="#a2a1b8"
+                    android:textSize="16dp" />
+
+                <esprit.tn.customfonts.MyTextView
+                    android:id="@+id/itmDescEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#0000"
+                    android:gravity="right"
+                    android:text="saddddddddsadddddddasdsaasasddddddddddd"
+
+                    android:padding="16dp"
+                    android:textColor="#181737"
+                    android:textColorHint="#1b193b"
+                    android:textSize="16dp" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <esprit.tn.customfonts.MyTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#0000"
+                    android:gravity="left"
+
+                    android:padding="16dp"
+                    android:text="nombre de recommandations"
+                    android:textColor="#a2a1b8"
+                    android:textSize="16dp" />
+                <esprit.tn.customfonts.MyTextView
+                    android:id="@+id/itmNbrRecom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#0000"
+                    android:gravity="right"
+                    android:hint="Sam Enric"
+                    android:maxLength="12"
+                    android:padding="16dp"
+                    android:textColor="#181737"
+                    android:textColorHint="#181737"
+                    android:textSize="16dp" />
+                <esprit.tn.customfonts.MyRegulerText
+                    android:id="@+id/ajouterBtn"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/itmNbrRecom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btnformate"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:textAlignment="center"
+                    android:padding="14dp"
+                    android:gravity="center"
+                    android:text="Ajouter une recommandation "
+                    android:textSize="16dp"
+                    android:textColor="#fff"
+                    />
+                <esprit.tn.customfonts.MyRegulerText
+                    android:id="@+id/afficherBtn"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ajouterBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btnformate"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:textAlignment="center"
+                    android:padding="14dp"
+                    android:gravity="center"
+                    android:text="Afficher les recommandations "
+                    android:textSize="16dp"
+                    android:textColor="#fff"
+                    />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecommanderF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <esprit.tn.customfonts.MyTextView_Poppins_Regular
+                android:id="@+id/recomDescTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Description"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/recomDescEt"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/recomDescTv"
+                android:layout_centerHorizontal="true" />
+
+            <esprit.tn.customfonts.MyTextView_Poppins_Regular
+                android:id="@+id/recomNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recomDescEt"
+                android:layout_centerHorizontal="true"
+                android:text="Nom :"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/recomNameEt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recomNameTv"
+                android:layout_centerHorizontal="true" />
+
+            <esprit.tn.customfonts.MyTextView_Poppins_Regular
+                android:id="@+id/recomNumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recomNameEt"
+                android:layout_centerHorizontal="true"
+                android:text="Numero :"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/recomNumEt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recomNumTv"
+                android:layout_centerHorizontal="true" />
+
+            <esprit.tn.customfonts.MyTextView_Poppins_Regular
+                android:id="@+id/MappinTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recomNumEt"
+                android:layout_centerHorizontal="true"
+                android:text="Pin map location"
+                android:textSize="30dp" />
+
+            <RelativeLayout
+                android:id="@+id/mapput"
+                android:layout_width="380dp"
+                android:layout_height="400dp"
+                android:layout_below="@+id/MappinTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".MapsActivity" />
+
+                <RelativeLayout
+                    android:id="@+id/relLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/white_border"
+                    android:elevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/ic_magnify"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_magnify" />
+
+                    <EditText
+                        android:id="@+id/input_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ic_magnify"
+                        android:background="@null"
+                        android:hint="Enter Address, City or Zip Code"
+                        android:imeOptions="actionSearch"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ic_gps"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/relLayout1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_gps" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mapput"
+                android:layout_centerInParent="true"
+                android:text="valide" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

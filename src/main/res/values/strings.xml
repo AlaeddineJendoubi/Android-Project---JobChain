@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">JobChain</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_home">Home</string>
+    <string name="search">Je cherche un : </string>
+    <string name="validate_Btn">Validate </string>
+    <string name="region">dans la region de : </string>
+    <string name="desc">avec cette descreption : </string>
+    <string-array name="specialities">
+        <item> Plombier</item>
+        <item> Forgeron</item>
+        <item> Charpentier</item>
+        <item> Electricien</item>
+        <item> Jardinier</item>
+        <item> Mécanicien</item>
+        <item> Décorateur</item>
+        <item> Peintre</item>
+    </string-array>
+
+    <string-array name="regions">
+        <item>Ariana</item>
+        <item>Béja</item>
+        <item>Ben Arous</item>
+        <item>Bizerte</item>
+        <item>Gabès</item>
+        <item>Gafsa</item>
+        <item>Jendouba</item>
+        <item>Kairouan</item>
+        <item>Kasserine</item>
+        <item>Kébili</item>
+        <item>Le Kef</item>
+        <item>Mahdia</item>
+        <item>La manouba</item>
+        <item>Médenine</item>
+        <item>Monastir</item>
+        <item>Nabeul</item>
+        <item>Sfax</item>
+        <item>Sidi Bouzid</item>
+        <item>Siliana</item>
+        <item>Sousse</item>
+        <item>Tataouine</item>
+        <item>Tozeur</item>
+        <item>Tunis</item>
+        <item>Zaghouan</item>
+    </string-array>
+
+    <string-array name="gouvernorat">
+        <item>Ariana</item>
+        <item>Béja</item>
+        <item>Ben Arous</item>
+        <item>Bizerte</item>
+        <item>Gabès</item>
+        <item>Gafsa</item>
+        <item>Jendouba</item>
+        <item>Kairouan</item>
+        <item>Kasserine</item>
+        <item>Kébili</item>
+        <item>Le Kef</item>
+        <item>Mahdia</item>
+        <item>La manouba</item>
+        <item>Médenine</item>
+        <item>Monastir</item>
+        <item>Nabeul</item>
+        <item>Sfax</item>
+        <item>Sidi Bouzid</item>
+        <item>Siliana</item>
+        <item>Sousse</item>
+        <item>Tataouine</item>
+        <item>Tozeur</item>
+        <item>Tunis</item>
+        <item>Zaghouan</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_details_search">DetailsSearch</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

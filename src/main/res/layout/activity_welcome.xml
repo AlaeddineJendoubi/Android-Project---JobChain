@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity"
+    android:background="@drawable/background">
+
+
+    <esprit.tn.customfonts.MyRegulerText
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnformate"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:textAlignment="center"
+        android:padding="14dp"
+        android:gravity="center"
+        android:text="Login"
+        android:textSize="16dp"
+        android:textColor="#fff"
+        />
+    <esprit.tn.customfonts.MyRegulerText
+        android:layout_below="@+id/login"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btnformate"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:textAlignment="center"
+        android:padding="14dp"
+        android:gravity="center"
+        android:text="Register"
+        android:textSize="16dp"
+        android:textColor="#fff"
+        />
+</RelativeLayout>

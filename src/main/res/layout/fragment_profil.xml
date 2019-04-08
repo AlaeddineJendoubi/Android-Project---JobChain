@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilFragment"
+    android:weightSum="100"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/nana"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="25dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/banner_03" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/imageViewprofil"
+                android:layout_width="48dp"
+                android:layout_height="52dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="181dp"
+                android:layout_marginLeft="181dp"
+                android:layout_marginTop="143dp"
+                tools:srcCompat="@tools:sample/avatars[0]" />
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nana"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <esprit.tn.customfonts.MyTextView
+                        android:id="@+id/usrusr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:gravity="left"
+                        android:maxLength="12"
+                        android:padding="16dp"
+                        android:text="Nom User :"
+                        android:textColor="#a2a1b8"
+                        android:textSize="16dp" />
+
+                    <esprit.tn.customfonts.MyTextView
+                        android:id="@+id/nomP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:gravity="right"
+                        android:hint="Sam Enricjjlkkljjkljkljkljkjkljlkkjljkljkl"
+
+                        android:padding="16dp"
+                        android:textColor="#181737"
+                        android:textColorHint="#181737"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dad8d8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <esprit.tn.customfonts.MyTextView
+                        android:id="@+id/mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:gravity="left"
+                        android:maxLength="12"
+                        android:padding="16dp"
+                        android:text="Prenom User"
+                        android:textColor="#a2a1b8"
+                        android:textSize="16dp" />
+
+                    <esprit.tn.customfonts.MyTextView
+                        android:id="@+id/prenomP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:gravity="right"
+                        android:hint="sam@assasasasasasasaassasasasasasasasa.com"
+
+                        android:padding="16dp"
+                        android:textColor="#181737"
+                        android:textColorHint="#1b193b"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#dad8d8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <esprit.tn.customfonts.MyTextView
+                        android:id="@+id/aaa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:gravity="left"
+                        android:maxLength="12"
+                        android:padding="16dp"
+                        android:text="Email user :"
+                        android:textColor="#a2a1b8"
+                        android:textSize="16dp" />
+
+                    <esprit.tn.customfonts.MyTextView
+                        android:id="@+id/emailP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:gravity="right"
+                        android:padding="16dp"
+
+                        android:text="saddddddddsadddddddasdsaasasddddddddddd"
+                        android:textColor="#181737"
+                        android:textColorHint="#1b193b"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <esprit.tn.customfonts.MyTextView
+                        android:id="@+id/pswrd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:gravity="left"
+                        android:maxLength="12"
+                        android:padding="16dp"
+                        android:text="Numero :"
+                        android:textColor="#a2a1b8"
+                        android:textSize="16dp" />
+
+                    <esprit.tn.customfonts.MyTextView
+                        android:id="@+id/numP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:gravity="right"
+                        android:padding="16dp"
+
+                        android:text="saddddddddsadddddddasdsaasasddddddddddd"
+                        android:textColor="#181737"
+                        android:textColorHint="#1b193b"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <esprit.tn.customfonts.MyTextView
+                        android:id="@+id/addd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:gravity="left"
+                        android:maxLength="12"
+                        android:padding="16dp"
+                        android:text="Adresse"
+                        android:textColor="#a2a1b8"
+                        android:textSize="16dp" />
+
+                    <esprit.tn.customfonts.MyTextView
+                        android:id="@+id/adP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0000"
+                        android:gravity="right"
+                        android:padding="16dp"
+
+                        android:text="saddddddddsadddddddasdsaasasddddddddddd"
+                        android:textColor="#181737"
+                        android:textColorHint="#1b193b"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <esprit.tn.customfonts.MyRegulerText
+                        android:id="@+id/editprofil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/itmNbrRecom"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="70dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/btnformate"
+                        android:gravity="center"
+                        android:padding="14dp"
+                        android:text="Modifier Profile "
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="550dp"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        >
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/evenement_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabprofiil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_add_black_24dp"/>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

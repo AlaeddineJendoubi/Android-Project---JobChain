@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Search_Submit">
+
+    <esprit.tn.customfonts.MyTextView_Poppins_Regular
+
+        android:id="@+id/searchTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/search"
+        android:textSize="30dp" />
+
+    <Spinner
+        android:id="@+id/spr_spec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"></Spinner>
+
+    <esprit.tn.customfonts.MyTextView_Poppins_Regular
+        android:id="@+id/regionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spr_spec"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/region"
+        android:textSize="30dp" />
+
+    <Spinner
+        android:id="@+id/spr_region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regionTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"></Spinner>
+
+    <esprit.tn.customfonts.MyTextView_Poppins_Regular
+        android:id="@+id/descTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spr_region"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/desc"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/descEt"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/descTv"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/validateSearchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descEt"
+        android:layout_centerHorizontal="true"
+        android:text="@string/validate_Btn" />
+
+</RelativeLayout>
