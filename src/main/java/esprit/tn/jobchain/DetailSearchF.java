@@ -22,9 +22,9 @@ import org.json.JSONObject;
 import static android.content.Context.MODE_PRIVATE;
 
 public class DetailSearchF extends Fragment {
-    private static final String url = "https://jobchain-tn.000webhostapp.com/v1/?op=getSeek";
+    private static final String url = "http://41.226.11.252:1180/jobchain/v1/?op=getSeek";
     public String idSeekUrl;
-    private String url1 ="https://jobchain-tn.000webhostapp.com/jobscript/v1/?op=getNbrRecom&"+idSeekUrl;
+    private String url1 ="http://41.226.11.252:1180/jobchain/v1/?op=getNbrRecom&"+idSeekUrl;
     public TextView tvSpec, tvRegion,  tvDesc,tvNbr,aff;
     public TextView btnRecom;
     public String nbrRecomOut;

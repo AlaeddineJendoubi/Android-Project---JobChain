@@ -88,17 +88,17 @@ public class HomeActivity extends AppCompatActivity {
                             selectedFragment = new ProfilFragment() ;
 
                             break;
-                        case R.id.nav_news:
-                            selectedFragment = new MainNewsActivity();
-                            break;
+
                         case R.id.nav_out:
-                            // selectedFragment = new Fragment();
+                            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                            startActivity(intent);
                             break;
                     }
 
-           getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                   selectedFragment).commit();
-
+                    if(selectedFragment != null) {
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                                selectedFragment).commit();
+                    }
                     return true;
                 }
             };

@@ -3,7 +3,7 @@ package esprit.tn.utile;
 
 
 public class Url {
-  public static  String URL = "http://192.168.1.193/jobscript/";
+  public static  String URL = "https://jobchain-tn.000webhostapp.com/jobscript/";
 
 
 }

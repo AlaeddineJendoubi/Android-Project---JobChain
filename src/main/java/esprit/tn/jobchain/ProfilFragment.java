@@ -123,7 +123,7 @@ public class ProfilFragment extends Fragment {
         layoutManagerOfrecyclerView = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManagerOfrecyclerView);
 
-        edit =(TextView) root.findViewById(R.id.editprofil);
+
         sessionManager = new SessionManager(getContext());
         // sessionManager.checkLogin();
         HashMap<String,String> user = sessionManager.getUserDetail();
@@ -138,13 +138,7 @@ public class ProfilFragment extends Fragment {
         getUserD();
         FloatingActionButton fab = root.findViewById(R.id.fabprofiil);
         fab.setOnClickListener(v -> nextScreen());
-        edit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getContext(), Profil.class);
-                startActivity(i);
-            }
-        });
+
 
         System.out.println( "hne3");
         recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {

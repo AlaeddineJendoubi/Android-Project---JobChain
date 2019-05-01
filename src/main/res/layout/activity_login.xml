@@ -98,13 +98,7 @@
         android:text="Don't have an account?"
         android:textSize="16dp"
         android:layout_gravity="center" />
-    <com.google.android.gms.common.SignInButton
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:id="@+id/bn_login">
 
-    </com.google.android.gms.common.SignInButton>
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

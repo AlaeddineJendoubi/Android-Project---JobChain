@@ -48,7 +48,7 @@ import java.util.Map;
 import esprit.tn.Entities.User;
 import esprit.tn.utile.Url;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener , GoogleApiClient.OnConnectionFailedListener{
+public class LoginActivity extends AppCompatActivity {
 
    private EditText edit_mail, edit_pass;
     TextView linkreg;
@@ -66,9 +66,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         sessionManager = new SessionManager(this);
 
-        GoogleSignInOptions signInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
-        googleApiClient = new GoogleApiClient.Builder(this).
-                enableAutoManage(this,this).addApi(Auth.GOOGLE_SIGN_IN_API,signInOptions).build();
+
 
 
         edit_mail= findViewById(R.id.email_input);
@@ -76,8 +74,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         loginButton= findViewById(R.id.LoginBtn);
         linkreg= findViewById(R.id.link);
         loading= findViewById(R.id.loadinglog);
-        SignIn = (SignInButton) findViewById(R.id.bn_login) ;
-        SignIn.setOnClickListener(this);
+
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -178,21 +176,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId())
-        {
-            case R.id.bn_login:
-                singIn();
-                break;
-        }
-    }
 
-    private  void singIn(){
-        Intent intent = Auth.GoogleSignInApi.getSignInIntent(googleApiClient);
-        startActivityForResult(intent,REQ_CODE);
-
-    }
     private void singOut(){
 
     }
@@ -230,8 +214,5 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    @Override
-    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
-    }
 }

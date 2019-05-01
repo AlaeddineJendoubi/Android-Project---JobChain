@@ -50,9 +50,9 @@ public class Profil extends AppCompatActivity {
     CircleImageView profile_image;
 
     String getId;
-    private  static  String URL_READ ="https://jobchain-tn.000webhostapp.com/jobscript/read_detail.php";
+    private  static  String URL_READ ="http://41.226.11.252:1180/jobchain/read_detail.php";
 
-    private  static  String URL_EDIT ="https://jobchain-tn.000webhostapp.com/edit_detail.php";
+    private  static  String URL_EDIT ="http://41.226.11.252:1180/jobchain/edit_detail.php";
 
     private  static  String URL_UPLOAD ="https://jobchain-tn.000webhostapp.com/jobscript/image_upload.php";
 

@@ -70,7 +70,7 @@
                         android:layout_weight="1"
                         android:background="#0000"
                         android:gravity="right"
-                        android:hint="Sam Enricjjlkkljjkljkljkljkjkljlkkjljkljkl"
+                        android:hint=""
 
                         android:padding="16dp"
                         android:textColor="#181737"
@@ -108,7 +108,7 @@
                         android:layout_weight="1"
                         android:background="#0000"
                         android:gravity="right"
-                        android:hint="sam@assasasasasasasaassasasasasasasasa.com"
+                        android:hint=""
 
                         android:padding="16dp"
                         android:textColor="#181737"
@@ -149,7 +149,7 @@
                         android:gravity="right"
                         android:padding="16dp"
 
-                        android:text="saddddddddsadddddddasdsaasasddddddddddd"
+                        android:text=""
                         android:textColor="#181737"
                         android:textColorHint="#1b193b"
                         android:textSize="16dp" />
@@ -182,7 +182,7 @@
                         android:gravity="right"
                         android:padding="16dp"
 
-                        android:text="saddddddddsadddddddasdsaasasddddddddddd"
+                        android:text=""
                         android:textColor="#181737"
                         android:textColorHint="#1b193b"
                         android:textSize="16dp" />
@@ -215,7 +215,7 @@
                         android:gravity="right"
                         android:padding="16dp"
 
-                        android:text="saddddddddsadddddddasdsaasasddddddddddd"
+                        android:text=""
                         android:textColor="#181737"
                         android:textColorHint="#1b193b"
                         android:textSize="16dp" />
@@ -225,22 +225,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <esprit.tn.customfonts.MyRegulerText
-                        android:id="@+id/editprofil"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/itmNbrRecom"
-                        android:layout_marginLeft="70dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginRight="70dp"
-                        android:layout_marginBottom="5dp"
-                        android:background="@drawable/btnformate"
-                        android:gravity="center"
-                        android:padding="14dp"
-                        android:text="Modifier Profile "
-                        android:textAlignment="center"
-                        android:textColor="#fff"
-                        android:textSize="16dp" />
+
 
                 </RelativeLayout>
 
